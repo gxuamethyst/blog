@@ -44,8 +44,7 @@ Hugo Static Site Generator v0.46 windows/amd64 BuildDate: 2018-08-01T09:01:27Z
 ``` shell
 wget https://github.com/gohugoio/hugo/releases/download/v0.46/hugo_0.46_Linux-64bit.tar.gz
 tar -zxvf hugo_0.46_Linux-64bit.tar.gz
-chmod +x hugo
-sudo mv hugo /usr/bin
+sudo mv hugo /usr/local/bin
 ```
 
 ## Hugo 简单使用
