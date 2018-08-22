@@ -9,6 +9,8 @@ tags: ["Hugo"]
 
 [Hugo](https://gohugo.io) 是一个使用 [Golang](https://golang.org) 编写的静态站点生成器，其他类似的工具还有 [Hexo](https://hexo.io)、[Jekyll](https://jekyllrb.com) 等等，Hugo 具有简单、易用、高效、易扩展、快速部署等特点，目前在 GitHub 上具有 27913 个 star，是目前较为流行的几大静态站点生成器之一，绝大多数 Hugo 使用者都将 Hugo 用于搭建个人博客。
 
+<!--more-->
+
 ## 下载安装 Hugo
 
 要安装 Hugo 可以参考 Hugo 官方的安装文档 [Install Hugo](https://gohugo.io/getting-started/installing/)，也可参照下述步骤进行安装。

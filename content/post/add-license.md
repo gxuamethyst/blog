@@ -15,6 +15,8 @@ tags: ["GitHub"]
 
 对于已经添加了许可证的 GitHub 项目，该项目的许可信息将会显示在该项目的主页面中。
 
+<!--more-->
+
 ![about-license](/images/about-license.png)
 
 ### 为新建的项目/仓库添加开源许可证
