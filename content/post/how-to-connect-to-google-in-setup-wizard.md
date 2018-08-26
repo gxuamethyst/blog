@@ -2,7 +2,7 @@
 title: "刷机之后在开机向导中如何连接 Google 进行验证"
 date: 2018-08-26T20:01:54+08:00
 draft: false
-tag: ["ROM", "Shadowsocks"]
+tags: ["ROM", "Shadowsocks"]
 ---
 
 本人闲来无事时喜欢将自己的 OnePlus 3T 手机刷成其他系统，然而在刷一加海外版的系统 Oxygen OS 后，新的版本的开机向导必须输入 Google 账号才能进入系统。
