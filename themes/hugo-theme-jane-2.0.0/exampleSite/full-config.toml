@@ -1,16 +1,16 @@
 baseURL = "http://localhost:1313/"
-title = "Gxuamethyst's blog"
+title = "Jane - A super concise theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "hugo-theme-jane-2.0.0"
+theme = "jane"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-paginate = 5              # Number of articles displayed on the homepage # 首页每页显示的文章数
+paginate = 3              # Number of articles displayed on the homepage # 首页每页显示的文章数
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
-# uglyURLs = false         # more info: https://gohugo.io/content-management/urls/#ugly-urls
+# uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
 # Highlight options.
 # See https://gohugo.io/content-management/syntax-highlighting/
@@ -20,12 +20,12 @@ PygmentsCodefencesGuessSyntax = true
 PygmentsOptions = "linenos=table"
 
 # language support # en / zh-cn / other... translations present in i18n/
-defaultContentLanguage = "zh-cn"           # Default language to use
-[languages.zh-cn]
-  languageCode = "zh-cn"
+defaultContentLanguage = "en"           # Default language to use
+[languages.en]
+  languageCode = "en"
 
 [author]                  # essential                     # 必需
-  name = "Gxuamethyst"
+  name = "xianmin"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -33,62 +33,62 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "主页"
+  name = "Home"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "归档"
+  name = "Archives"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "标签"
+  name = "Tags"
   weight = 30
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "分类"
+  name = "Categories"
   weight = 40
   identifier = "categories"
   url = "/categories/"
-# [[menu.main]]
-#  name = "GitHub"
-#  weight = 50
-#  url = "https://github.com/gxuamethyst"
+[[menu.main]]
+  name = "external-link"
+  weight = 50
+  url = "https://gohugo.io"
 
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
-  since = "2018"            # Site creation time          # 站点建立时间
+  since = "2017"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Gxuamethyst"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["Hugo", "Blog","Gxuamethyst"]
-  description = "Gxuamethyst's blog."
+  logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["Hugo", "theme","jane"]
+  description = "Hugo theme jane example site."
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archive-paginate = 8
+  archive-paginate = 3
 
   # paginate style, default use numbered pagination links
   # if true, use original "Previous" and "Next" links.
-  # paginateOriginalStyle = false
+  # paginateOriginalStyle = true
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
 
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  moreMeta = false
+  moreMeta = true
 
   # show language chooser in menu
-  showMenuLanguageChooser = false
+  showMenuLanguageChooser = true
 
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
-  photoswipe = false         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
+  photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
   bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
@@ -107,7 +107,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
   # enable 'fork me on github', see https://blog.github.com/2008-12-19-github-ribbons/
-  # forkMeOnGithub = "https://github.com/gxuamethyst"
+  # forkMeOnGithub = "https://github.com/xianmin/hugo-theme-jane"
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = false
@@ -126,10 +126,10 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     issueTerm = "pathname"
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = "gxuamethyst"              # Your GitHub ID
-    repo = "blog-comments"               # The repo to store comments
-    clientId = "72eb6038a7903a3fa8d5"           # Your client ID
-    clientSecret = "e894307c7a1c3d67086a6eb25d55506d414320db"       # Your client secret
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
+    clientId = ""           # Your client ID
+    clientSecret = ""       # Your client secret
 
   [params.reward]                                         # 文章打赏
     enable = false
@@ -145,23 +145,23 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     appKey = ""
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:gxuamethyst@gmail.com"
-    # b-stack-overflow = "http://localhost:1313"
-    # c-twitter = "http://localhost:1313"
-    # d-facebook = "http://localhost:1313"
-    # e-linkedin = "http://localhost:1313"
-    # f-google = "http://localhost:1313"
-    g-github = "https://github.com/gxuamethyst"
-    # h-weibo = "http://localhost:1313"
-    # i-zhihu = "http://localhost:1313"
-    # j-douban = "http://localhost:1313"
-    # k-pocket = "http://localhost:1313"
-    # l-tumblr = "http://localhost:1313"
-    # m-instagram = "http://localhost:1313"
-    # n-gitlab = "http://localhost:1313"
-    # o-goodreads = "http://localhost:1313"
-    # p-coding = "http://localhost:1313"
-    # q-bilibili = "http://localhost:1313"
+    a-email = "mailto:your@email.com"
+    b-stack-overflow = "http://localhost:1313"
+    c-twitter = "http://localhost:1313"
+    d-facebook = "http://localhost:1313"
+    e-linkedin = "http://localhost:1313"
+    f-google = "http://localhost:1313"
+    g-github = "http://localhost:1313"
+    h-weibo = "http://localhost:1313"
+    i-zhihu = "http://localhost:1313"
+    j-douban = "http://localhost:1313"
+    k-pocket = "http://localhost:1313"
+    l-tumblr = "http://localhost:1313"
+    m-instagram = "http://localhost:1313"
+    n-gitlab = "http://localhost:1313"
+    o-goodreads = "http://localhost:1313"
+    p-coding = "http://localhost:1313"
+    q-bilibili = "http://localhost:1313"
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23
