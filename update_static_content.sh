@@ -1,6 +1,6 @@
 #!/bin/sh
 
-github_repo=https://github.com/gxuamethyst/gxuamethyst.github.io.git
+github_repo=git@github.com:gxuamethyst/gxuamethyst.github.io.git
 target_url=https://gxuamethyst.github.io
 
 echo "remove public dir..."
